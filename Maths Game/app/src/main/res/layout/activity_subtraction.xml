@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutHor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image2"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Score"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+
+            android:id="@+id/scoreVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Life"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/lifeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Time"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/timeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text=""
+
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/lightBlue"
+        android:gravity="center"
+        android:text="Question"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:ems="10"
+        android:textSize="25sp"
+        android:layout_marginBottom="15dp"
+        android:hint="Write the answer here"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:textColorHint="@color/white"
+        android:background="@color/lightBlue"
+        android:gravity="center"
+        android:inputType="number"
+
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/okayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_customize"
+            android:backgroundTintMode="add"
+            android:text="Ok"
+            android:textColor="@color/lightBlue"
+            app:backgroundTint="@null"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_customize"
+            app:backgroundTint="@null"
+            android:text="Next"
+            android:clickable="false"
+            android:textColor="@color/lightBlue"
+            android:textSize="25sp" />
+    </LinearLayout>
+</LinearLayout>

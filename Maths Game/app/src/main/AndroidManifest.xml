@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Multiplication"
+            android:exported="false"
+            android:theme="@style/Theme.Multiplication">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Subtraction"
+            android:exported="false"
+            android:theme="@style/Theme.Subtraction">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- theme for main activity: -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MathsGame">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- theme for addition -->
+        <activity
+            android:name=".Addition"
+            android:exported="false"
+            android:theme="@style/Theme.Addition">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- theme for congratulation -->
+        <activity
+            android:name=".Congratuaation"
+            android:exported="false"
+            android:theme="@style/Theme.Congratuaation">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
